@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 #SECRET_KEY = 'c14d549c574e4d8cf162404ef0b04598'
 SECRET_KEY = '8e45e68f79f53c71b3e849dc24d347ca'
 
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = False
 
@@ -85,6 +85,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # Custom settings
 
 LOGIN_REDIRECT_URL = '/oauth/'
+LOGOUT_REDIRECT_URL = '/oauth/'
 
 # OIDC Provider settings
 
