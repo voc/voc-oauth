@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenID oauth2 service (c3voc.de/oauth)
+
+[Service]
+User=bjoern
+Type=simple
+WorkingDirectory=/var/www/001-c3voc.de/auth
+ExecStart=/var/www/001-c3voc.de/auth/venv3/bin/python3 /var/www/001-c3voc.de/auth/manage.py runserver 127.0.0.1:8032
+
+[Install]
+WantedBy=multi-user.target
