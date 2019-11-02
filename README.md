@@ -7,8 +7,8 @@
  - install requirements `pip install -r requirements.txt`
  - generate key, add superuser
    ```
-./manage.py migrate
-./manage.py creatersakey
+   ./manage.py migrate
+   ./manage.py creatersakey
    ```
  - adapt app/serings.py
  - adapt app/urls.py
