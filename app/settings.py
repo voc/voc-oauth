@@ -91,3 +91,4 @@ LOGOUT_REDIRECT_URL = '/oauth/'
 
 SITE_URL = 'https://c3voc.de/oauth/'
 OIDC_SESSION_MANAGEMENT_ENABLE = True
+OIDC_LOGIN_URL = '/oauth/accounts/login/'
