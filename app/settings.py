@@ -7,6 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '8e45e68f79f53c71b3e849dc24d347ca'
 
 DEBUG = False
+#DEBUG = True
 
 TEMPLATE_DEBUG = False
 
@@ -89,6 +90,6 @@ LOGOUT_REDIRECT_URL = '/oauth/'
 
 # OIDC Provider settings
 
-SITE_URL = 'https://c3voc.de/oauth/'
+SITE_URL = 'https://c3voc.de'
 OIDC_SESSION_MANAGEMENT_ENABLE = True
 OIDC_LOGIN_URL = '/oauth/accounts/login/'
