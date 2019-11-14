@@ -80,16 +80,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
-STATIC_URL = '/oauth/static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Custom settings
 
-LOGIN_REDIRECT_URL = '/oauth/'
-LOGOUT_REDIRECT_URL = '/oauth/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # OIDC Provider settings
 
 SITE_URL = 'https://c3voc.de'
 OIDC_SESSION_MANAGEMENT_ENABLE = True
-OIDC_LOGIN_URL = '/oauth/accounts/login/'
+OIDC_LOGIN_URL = '/accounts/login/'
