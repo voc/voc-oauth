@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^accounts/logout/$', auth_views.LogoutView.as_view(), name='logout'),
     url(r'^', include('oidc_provider.urls', namespace='oidc_provider')),
     url(r'^oauth/token/?$', views.TokenView.as_view(), name='oidc_provider.token'),
+    url(r'^', include('password_reset.urls')),
     url(r'^admin/', admin.site.urls),
 ]

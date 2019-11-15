@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'oidc_provider',
+    'password_reset',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -87,6 +88,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+DEFAULT_FROM_EMAIL = 'noreply@c3voc.de'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
 
 # OIDC Provider settings
 

@@ -23,6 +23,10 @@
                 <input class="btn btn-primary btn-lg btn-block" type="submit" value="{% trans 'Enter' %}" />
             </fieldset>
         </form>
+        {% url 'password_reset_recover' as the_url %}
+        {% if the_url %}
+        <p><a href="{{ the_url }}" class="btn btn-primary btn-block">{% trans 'Password Recovery' %}</a></p>
+        {%endif%}
     </div>
 </div>
 
