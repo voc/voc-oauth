@@ -94,6 +94,6 @@ EMAIL_HOST = 'localhost'
 
 # OIDC Provider settings
 
-SITE_URL = 'https://c3voc.de'
+SITE_URL = 'https://auth.c3voc.de'
 OIDC_SESSION_MANAGEMENT_ENABLE = True
 OIDC_LOGIN_URL = '/accounts/login/'
