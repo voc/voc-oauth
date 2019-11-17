@@ -5,10 +5,11 @@
  - create virtualenv `virtualenv -p python3 venv3`
  - `. ./venv/bin/activate`
  - install requirements `pip install -r requirements.txt`
- - generate key, add superuser
+ - generate key, add superuser, create static files
    ```
    ./manage.py migrate
    ./manage.py creatersakey
+   ./manage.py collectstatic
    ```
  - adapt app/serings.py
  - adapt app/urls.py
