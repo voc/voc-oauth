@@ -2,7 +2,7 @@
 
 ## installation
  - checkout
- - create virtualenv `virtualenv -p python3 venv3`
+ - create virtualenv `virtualenv -p python3 venv`
  - `. ./venv/bin/activate`
  - install requirements `pip install -r requirements.txt`
  - adapt app/settings.py
